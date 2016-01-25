@@ -68,19 +68,6 @@ class ScryptComponent extends Component {
 		
 			 } 
 			 
-		//easy pass for low security
-		//high user convience	 
-			 
-     function generatePass() {
-        $len = 10;
-        $base = "abcdefghijklmnopqrstuvwxzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        $max = strlen($base) - 1;
-        $passcode = '';
-        mt_srand((double) microtime() * 1000000);
-        while (strlen($passcode) < $len + 2)
-            $passcode.=$base{mt_rand(0, $max)};
-        return $passcode;
-    }
   
 
 }
